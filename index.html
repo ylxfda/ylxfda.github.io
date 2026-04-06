@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="home-hero">
+  <h1>思想存档</h1>
+  <p>记录想法与观点。每篇文章通过 Git 提交获得不可篡改的时间戳，证明思想的诞生时刻。</p>
+  <div class="timestamp-badge">所有文章均有 Git 时间戳验证</div>
+</div>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <div class="post-meta">
+      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      {% for cat in post.categories %}
+        <a href="{{ '/categories#' | append: cat | relative_url }}" class="post-category cat-{{ cat }}">{{ cat }}</a>
+      {% endfor %}
+    </div>
+    <a href="{{ post.url | relative_url }}" class="post-title-link">{{ post.title }}</a>
+    {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+{% if site.posts.size == 0 %}
+<p style="color: var(--text-secondary); text-align: center; padding: 3rem 0;">
+  还没有文章。在 <code>_posts</code> 文件夹中创建你的第一篇吧！
+</p>
+{% endif %}

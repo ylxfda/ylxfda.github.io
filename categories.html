@@ -1,0 +1,24 @@
+---
+layout: default
+title: 文章分类
+---
+
+<h1 style="font-family: var(--font-display); margin-bottom: 2rem;">文章分类</h1>
+
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+  <h2 id="{{ category[0] }}" style="font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent); margin: 2rem 0 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+    {{ category[0] }}
+    <span style="color: var(--text-muted); font-size: 0.85rem;">({{ category[1].size }})</span>
+  </h2>
+  <ul class="post-list">
+    {% for post in category[1] %}
+    <li class="post-item" style="padding: 1rem 0;">
+      <div class="post-meta">
+        <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      </div>
+      <a href="{{ post.url | relative_url }}" class="post-title-link" style="font-size: 1.15rem;">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

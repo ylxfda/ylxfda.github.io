@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<article>
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="post-date">{{ page.date | date: "%Y-%m-%d %H:%M" }}</span>
+      {% for cat in page.categories %}
+        <span class="post-category cat-{{ cat }}">{{ cat }}</span>
+      {% endfor %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+    <div class="tag-list" style="margin-top: 0.8rem;">
+      {% for tag in page.tags %}
+        <a href="{{ '/tags#' | append: tag | relative_url }}" class="tag-chip">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+    <div class="timestamp-badge">
+      Git 时间戳已记录 · {{ page.date | date: "%Y-%m-%d" }}
+    </div>
+    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.8rem;">
+      本文的发布时间可通过 
+      <a href="https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io/commits" target="_blank" style="color: var(--accent);">
+        Git 提交历史
+      </a> 
+      独立验证。
+    </p>
+  </div>
+</article>
+
+<nav style="display: flex; justify-content: space-between; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.9rem;">
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" style="color: var(--accent); text-decoration: none;">← {{ page.previous.title | truncatewords: 6 }}</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" style="color: var(--accent); text-decoration: none;">{{ page.next.title | truncatewords: 6 }} →</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+</nav>

@@ -1,0 +1,41 @@
+title: "思想存档 | Thought Archive"
+description: "Ideas timestamped on the blockchain of Git"
+author: "Your Name"
+url: ""
+baseurl: ""
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  math_engine: null
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  categories_pages:
+    output: true
+    permalink: /category/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
