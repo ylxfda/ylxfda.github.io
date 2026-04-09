@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -482,10 +482,10 @@
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
       <nav>
         <ul class="site-nav">
-          <li><a href="{{ '/' | relative_url }}">首页</a></li>
-          <li><a href="{{ '/categories' | relative_url }}">分类</a></li>
-          <li><a href="{{ '/archive' | relative_url }}">归档</a></li>
-          <li><a href="{{ '/about' | relative_url }}">关于</a></li>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+          <li><a href="{{ '/archive' | relative_url }}">Archive</a></li>
+          <li><a href="{{ '/about' | relative_url }}">About</a></li>
         </ul>
       </nav>
     </div>
@@ -498,10 +498,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }} · 
-      <a href="https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io/commits" target="_blank">查看 Git 提交历史</a>
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }} ·
+      <a href="https://github.com/ylxfda/ylxfda.github.io/commits" target="_blank">Git commit history</a>
     </p>
-    <p class="footer-git-info">每篇文章均有不可篡改的 Git 时间戳记录</p>
+    <p class="footer-git-info">Every post is immutably timestamped via Git</p>
   </footer>
 
 </body>

@@ -1,30 +1,30 @@
 ---
 layout: default
-title: 关于
+title: About
 ---
 
-<h1 style="font-family: var(--font-display); margin-bottom: 2rem;">关于本站</h1>
+<h1 style="font-family: var(--font-display); margin-bottom: 2rem;">About</h1>
 
 <div class="post-content">
 
-这是我的个人思想存档。我在这里记录自己的想法、观点和研究笔记。
+This is my personal journal for ideas, opinions, and research notes — with a focus on AI, technology, and the future.
 
-## 为什么选择 Git 作为时间戳？
+## Why Git timestamps?
 
-每篇文章在发布时都会通过 `git commit` 生成一条不可篡改的记录，包含精确的时间戳和内容哈希。任何人都可以通过查看本站的 [Git 提交历史](https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io/commits) 来验证每篇文章的发布时间。
+Every post is recorded via `git commit` at publish time, generating an immutable entry with a precise timestamp and content hash. Anyone can independently verify when a post was written by checking the [Git commit history](https://github.com/ylxfda/ylxfda.github.io/commits).
 
-这类似于 arXiv 论文的时间戳功能——证明某个想法在特定时间已经存在。
+This works like arXiv timestamps — proving that an idea existed at a specific point in time.
 
-## 如何验证
+## How to verify
 
-1. 访问本站的 [GitHub 仓库](https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io)
-2. 查看 commits 历史
-3. 每个 commit 都有唯一的 SHA 哈希和时间戳
-4. GitHub 会独立记录和验证这些信息
+1. Visit the [GitHub repository](https://github.com/ylxfda/ylxfda.github.io)
+2. Browse the commit history
+3. Each commit has a unique SHA hash and timestamp
+4. GitHub independently records and verifies this information
 
-## 联系方式
+## Contact
 
-- GitHub: [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [ylxfda](https://github.com/ylxfda)
 - Email: your.email@example.com
 
 </div>

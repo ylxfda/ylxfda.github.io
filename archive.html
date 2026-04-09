@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 文章归档
+title: Archive
 ---
 
-<h1 style="font-family: var(--font-display); margin-bottom: 2rem;">文章归档</h1>
+<h1 style="font-family: var(--font-display); margin-bottom: 2rem;">Archive</h1>
 
 {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
