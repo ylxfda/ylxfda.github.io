@@ -5,26 +5,8 @@ title: About
 
 <h1 style="font-family: var(--font-display); margin-bottom: 2rem;">About</h1>
 
-<div class="post-content">
-
-This is my personal journal for ideas, opinions, and research notes — with a focus on AI, technology, and the future.
-
-## Why Git timestamps?
-
-Every post is recorded via `git commit` at publish time, generating an immutable entry with a precise timestamp and content hash. Anyone can independently verify when a post was written by checking the [Git commit history](https://github.com/ylxfda/ylxfda.github.io/commits).
-
-This works like arXiv timestamps — proving that an idea existed at a specific point in time.
-
-## How to verify
-
-1. Visit the [GitHub repository](https://github.com/ylxfda/ylxfda.github.io)
-2. Browse the commit history
-3. Each commit has a unique SHA hash and timestamp
-4. GitHub independently records and verifies this information
-
-## Contact
-
-- GitHub: [ylxfda](https://github.com/ylxfda)
-- Email: your.email@example.com
-
+<div class="home-hero" style="border-bottom: none; padding-top: 0;">
+  <p>As a kid raised on classic sci-fi, I spent much of my life waiting for the future. I looked back with envy at the generations who witnessed split atoms, roaring jet engines, and the first footsteps on the moon. For decades, our modern era felt bland by comparison—defined mainly by incrementally faster computers and a growing internet. It was amazing, yes, but not thrilling.</p>
+  <p>Then, the illusion of a stagnant age shattered. The breakthroughs that began in 2012 finally pulled Artificial Intelligence out of the realm of buzzwords and into a living, breathing reality.</p>
+  <p>After years of waiting, that sci-fi boy inside me is finally thrilled. The future isn't just coming—it has arrived. And we have a <strong style="color: var(--accent);">front-row</strong> seat to watch it unfold.</p>
 </div>
