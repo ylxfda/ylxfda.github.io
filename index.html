@@ -20,7 +20,7 @@ layout: default
     </div>
     <a href="{{ post.url | relative_url }}" class="post-title-link">{{ post.title }}</a>
     {% if post.excerpt %}
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }} {% if post.content.size > post.excerpt.size %}<a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>{% endif %}</p>
     {% endif %}
   </li>
   {% endfor %}
