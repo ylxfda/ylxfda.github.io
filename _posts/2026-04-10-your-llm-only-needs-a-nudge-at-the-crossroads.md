@@ -25,7 +25,7 @@ In other words, don't waste the RL signal on "boring" tokens where the model alr
 
 It's always surreal to see your private shower thoughts appear in a peer-reviewed paper with professional LaTeX formatting. While browsing the NeurIPS 2025 proceedings, I found that a team at Alibaba's Qwen group had turned this exact intuition into a rigorous framework.
 
-**The Paper:** *Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*
+**The Paper:** [*Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning*](https://arxiv.org/abs/2506.01939)
 
 They took a data-driven look at what they call "Forking Tokens"—the high-entropy minority that actually determines whether a reasoning chain succeeds or fails. Here's what stood out:
 
